@@ -1,0 +1,18 @@
+p id="notice"
+  = notice
+
+dl
+  dt CPL Number
+  dd= @case.cpl_number
+
+  dt Block Number
+  dd= @case.block_number
+
+  dt Patient Last Name
+  dd= @case.patient_last_name
+
+  dt Validation
+  dd= @case.validation
+
+= link_to 'Edit', edit_case_path(@case)
+= link_to 'Back', cases_path

@@ -1,0 +1,7 @@
+= semantic_form_for @case do |case_form|
+  = case_form.inputs do
+    = case_form.input :cpl_number, :label => 'CPL Number'
+    = case_form.input :block_number, :label => 'Block Number'
+    = case_form.input :patient_last_name, :label => 'Patient Last Name'
+    = case_form.input :validation, :label => 'Is this case for a probe validation?'
+  = case_form.buttons

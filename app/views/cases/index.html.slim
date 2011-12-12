@@ -1,0 +1,32 @@
+h1 Listing Cases
+
+table
+  thead
+    tr
+      th CPL Number
+      th Block Number
+      th Patient Last Name
+      th Validation
+      th
+      th
+      th
+
+  tbody
+    - @cases.each do |instance|
+      tr
+        td= instance.cpl_number
+        td= instance.block_number
+        td= instance.patient_last_name
+        td= instance.validation
+        td
+          = link_to 'Show', instance
+        td
+          = link_to 'Edit', edit_case_path(instance)
+        td
+          = link_to 'Destroy', instance, confirm: 'Are you sure?', method: :delete
+
+  tfoot
+    tr
+      td colspan="5"
+      td
+        = link_to 'New Case', new_case_path

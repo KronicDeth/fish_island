@@ -11,8 +11,12 @@ gem 'rails', '3.1.3'
 
 # for foreign keys in database
 gem 'foreigner'
+# form builder
+gem 'formtastic'
 # postgres for database
 gem 'pg'
+# slim view templates
+gem 'slim'
 
 #
 # Deployment
@@ -36,4 +40,6 @@ group :development, :test do
   gem 'rspec-rails'
   # For debugging
   gem 'ruby-debug19'
+  # matchers for rspec
+  gem 'shoulda-matchers'
 end
